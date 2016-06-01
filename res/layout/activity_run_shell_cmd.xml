@@ -4,9 +4,46 @@
     android:layout_height="match_parent"
     tools:context=".RunShellCmd" >
 
-    <TextView
+    <EditText
+        android:id="@+id/input_cmd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="24dp"
+        android:hint="@null"
+        android:layout_toLeftOf="@+id/btn_run_cmd"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/tv_inputTips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/input_cmd"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/btn_run_cmd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/input_cmd"
+        android:layout_alignParentRight="true"
+        android:text="@string/run_cmd" />
+
+    <TextView
+        android:id="@+id/tv_runResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/input_cmd"
+        android:text="" />
 
 </RelativeLayout>
