@@ -2,6 +2,8 @@
 <resources>
 
     <string name="app_name">RunShellCmd</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="input_cmd">Input the command:</string>
+    <string name="run_cmd">RUN CMD</string>
+    <string name="cmd_none">Command is none!</string>
 
 </resources>
