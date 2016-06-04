@@ -43,7 +43,7 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:layout_below="@+id/btn_run_cmd" >
+        android:layout_below="@+id/et_cmd" >
 
         <TextView
             android:id="@+id/tv_runResult"
